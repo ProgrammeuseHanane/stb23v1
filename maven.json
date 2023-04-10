@@ -1,9 +1,15 @@
 {
-"build": {
-"type": "maven",
-"goal": "package"
-},
-"deploy": {
-"goal": "spring-boot:run"
+  "language": "java",
+  "build": {
+    "plugins": [
+      {
+        "groupId": "org.springframework.boot",
+        "artifactId": "spring-boot-maven-plugin"
+      }
+    ]
+  },
+  "deploy": {
+    "goal": "spring-boot:run"
+  }
 }
-}
+
